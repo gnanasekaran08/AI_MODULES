@@ -1,0 +1,87 @@
+question,department,division
+How would you rate the doctor's punctuality?,OPD,General Medicine
+Was the doctor available at your scheduled appointment time?,OPD,General Medicine
+Did the doctor explain your medical condition clearly?,OPD,General Medicine
+Were your concerns listened to carefully by the doctor?,OPD,General Medicine
+Did you receive enough time during your consultation?,OPD,General Medicine
+Were the treatment options explained properly?,OPD,General Medicine
+Did the doctor answer all your questions satisfactorily?,OPD,General Medicine
+Was the consultation process smooth and organized?,OPD,General Medicine
+Did you feel comfortable discussing your health issues?,OPD,General Medicine
+Would you recommend this doctor to others?,OPD,General Medicine
+Was the orthopedic doctor available on time?,OPD,Orthopedics
+Did the orthopedic doctor explain your injury properly?,OPD,Orthopedics
+Were your X-ray reports reviewed carefully?,OPD,Orthopedics
+Was the treatment plan explained clearly?,OPD,Orthopedics
+Did you receive proper advice regarding your recovery?,OPD,Orthopedics
+Were your mobility concerns addressed?,OPD,Orthopedics
+Did the doctor recommend appropriate exercises?,OPD,Orthopedics
+Was the consultation satisfactory?,OPD,Orthopedics
+Were your follow-up instructions clear?,OPD,Orthopedics
+Would you revisit this orthopedic department?,OPD,Orthopedics
+Was the pediatric doctor friendly towards your child?,OPD,Pediatrics
+Did the doctor explain your child's condition clearly?,OPD,Pediatrics
+Was your child treated with care?,OPD,Pediatrics
+Did the doctor answer all your questions?,OPD,Pediatrics
+Was the consultation comfortable for your child?,OPD,Pediatrics
+Were vaccination details explained properly?,OPD,Pediatrics
+Did you receive proper dietary advice for your child?,OPD,Pediatrics
+Was enough consultation time provided?,OPD,Pediatrics
+Would you recommend this pediatric department?,OPD,Pediatrics
+"Overall, were you satisfied with the pediatric consultation?",OPD,Pediatrics
+Were the nurses attentive to your needs?,IPD,Nursing
+Did nurses respond quickly when assistance was needed?,IPD,Nursing
+Were medications administered on time?,IPD,Nursing
+Did the nurses communicate politely?,IPD,Nursing
+Were your questions answered by the nursing staff?,IPD,Nursing
+Did nurses monitor your condition regularly?,IPD,Nursing
+Were emergency requests handled promptly?,IPD,Nursing
+Did the nurses explain procedures before performing them?,IPD,Nursing
+Were you treated respectfully by the nursing staff?,IPD,Nursing
+Were shift changes handled smoothly?,IPD,Nursing
+Was the food served at the correct temperature?,Dietary,Kitchen
+Did the food meet your dietary requirements?,Dietary,Kitchen
+Was the food served on time?,Dietary,Kitchen
+Were meals hygienically prepared?,Dietary,Kitchen
+Was the taste of the food satisfactory?,Dietary,Kitchen
+Did you receive the correct meal?,Dietary,Kitchen
+Was the portion size adequate?,Dietary,Kitchen
+Was the food fresh?,Dietary,Kitchen
+Did the kitchen staff respond to special requests?,Dietary,Kitchen
+"Overall, were you satisfied with the food service?",Dietary,Kitchen
+Were prescribed medicines available?,Pharmacy,Pharmacy
+Was the medicine issued without delay?,Pharmacy,Pharmacy
+Did the pharmacist explain dosage instructions?,Pharmacy,Pharmacy
+Were medicine labels clear?,Pharmacy,Pharmacy
+Did you receive all prescribed medicines?,Pharmacy,Pharmacy
+Were alternative medicines explained when necessary?,Pharmacy,Pharmacy
+Was the pharmacy staff courteous?,Pharmacy,Pharmacy
+Was your waiting time at the pharmacy reasonable?,Pharmacy,Pharmacy
+Was the billing for medicines accurate?,Pharmacy,Pharmacy
+"Overall, were you satisfied with the pharmacy service?",Pharmacy,Pharmacy
+Was your bill generated accurately?,Billing,Accounts
+Were billing charges explained clearly?,Billing,Accounts
+Was the billing process completed quickly?,Billing,Accounts
+Did the billing staff answer your questions?,Billing,Accounts
+Were payment options explained properly?,Billing,Accounts
+Did you receive the correct receipt?,Billing,Accounts
+Was insurance processing handled efficiently?,Billing,Accounts
+Were there any unexpected charges?,Billing,Accounts
+Was the billing counter organized?,Billing,Accounts
+"Overall, were you satisfied with the billing service?",Billing,Accounts
+Was your room cleaned regularly?,Housekeeping,Housekeeping
+Were the washrooms kept clean?,Housekeeping,Housekeeping
+Was the hospital environment hygienic?,Housekeeping,Housekeeping
+Did housekeeping staff respond promptly?,Housekeeping,Housekeeping
+Were bedsheets changed regularly?,Housekeeping,Housekeeping
+Were dustbins emptied on time?,Housekeeping,Housekeeping
+Was the room free from unpleasant odors?,Housekeeping,Housekeeping
+Were cleaning staff polite?,Housekeeping,Housekeeping
+Was your room maintained throughout your stay?,Housekeeping,Housekeeping
+"Overall, were you satisfied with housekeeping?",Housekeeping,Housekeeping
+Were your laboratory reports delivered on time?,Laboratory,Lab
+Was the sample collection process smooth?,Laboratory,Lab
+Were lab technicians professional?,Laboratory,Lab
+Were your reports accurate and easy to understand?,Laboratory,Lab
+"Overall, were you satisfied with the laboratory services?",Laboratory,Lab
+How was the experience with the hospital,General,Common

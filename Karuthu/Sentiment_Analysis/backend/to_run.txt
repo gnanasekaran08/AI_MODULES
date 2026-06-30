@@ -1,0 +1,4 @@
+terminal : /backend :
+    1. pip install -r requirements.py 
+    2. python backend/training/train.py
+    3. python run.py

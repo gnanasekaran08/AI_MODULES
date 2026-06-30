@@ -1,0 +1,18 @@
+1. install mysql , change password accouding to user
+
+2. locally install qdrant:
+    https://github.com/qdrant/qdrant/releases?utm_source=chatgpt.com
+    download : qdrant-x86_64-pc-windows-msvc.zip [for windows]
+    download : qdrant_1.xx.x-1_amd64.deb [for ubuntu]
+
+3. For Ubuntu :-
+    1. sudo dpkg -i qdrant_1.15.5-1_amd64.deb
+    2. sudo apt --fix-broken install [ only if dependencies missing]
+    3. start : sudo systemctl start qdrant
+    4. enable it on boot : sudo systemctl enable qdrant
+
+4. For Windows :-
+    1. open the downloaded folder in cmd 
+    2. qdrant.exe
+
+

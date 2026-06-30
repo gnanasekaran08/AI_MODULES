@@ -1,0 +1,547 @@
+2026-06-28 10:26:00,620 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:26:00,883 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:26:00,883 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:26:00,908 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:43:15,671 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:43:15,893 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:43:15,893 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:43:15,918 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:43:15,926 | INFO | app.services.qdrant_service | Creating Collection...
+2026-06-28 10:43:16,056 | INFO | app.services.qdrant_service | Collection Created.
+2026-06-28 10:43:16,056 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:43:28,591 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:44:37,321 | ERROR | app.services.predictor | 'QdrantClient' object has no attribute 'search'
+Traceback (most recent call last):
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/predictor.py", line 18, in predict
+    results = QdrantService.search_vector(
+        embedding=embedding,
+        limit=1
+    )
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/qdrant_service.py", line 135, in search_vector
+    results = client.search(
+              ^^^^^^^^^^^^^
+AttributeError: 'QdrantClient' object has no attribute 'search'
+2026-06-28 10:47:53,464 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:47:53,691 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:47:53,691 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:47:53,717 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:47:53,724 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:47:53,725 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:48:10,303 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:48:18,190 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:48:18,380 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:48:18,380 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:48:18,405 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:48:18,410 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:48:18,411 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:48:34,040 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:48:44,086 | ERROR | app.services.predictor | Unknown arguments: ['query_vector']
+Traceback (most recent call last):
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/predictor.py", line 18, in predict
+    results = QdrantService.search_vector(
+        embedding=embedding,
+        limit=1
+    )
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/qdrant_service.py", line 135, in search_vector
+    results = client.query_points(
+    
+    ...<7 lines>...
+    
+    )
+  File "/home/azar-b/.local/lib/python3.14/site-packages/qdrant_client/qdrant_client.py", line 382, in query_points
+    assert len(kwargs) == 0, f"Unknown arguments: {list(kwargs.keys())}"
+           ^^^^^^^^^^^^^^^^
+AssertionError: Unknown arguments: ['query_vector']
+2026-06-28 10:50:24,258 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:50:24,453 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:50:24,453 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:50:24,477 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:50:24,484 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:50:24,484 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:50:38,256 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:51:04,382 | ERROR | app.services.predictor | 'QueryResponse' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/predictor.py", line 29, in predict
+    result = results[0]
+             ~~~~~~~^^^
+TypeError: 'QueryResponse' object is not subscriptable
+2026-06-28 10:52:59,920 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:53:00,134 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:53:00,134 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:53:00,162 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:53:00,171 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:53:00,172 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:53:14,351 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:53:24,361 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:53:24,564 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:53:24,565 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:53:24,589 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:53:24,595 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:53:24,595 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:53:37,927 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:53:49,160 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:53:49,354 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:53:49,354 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:53:49,379 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:53:49,384 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:53:49,385 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:54:02,534 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:54:11,823 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:54:12,020 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:54:12,021 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:54:12,041 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:54:12,045 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:54:12,045 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:54:25,478 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:54:32,018 | ERROR | app.services.predictor | type object 'QdrantService' has no attribute 'query_points'
+Traceback (most recent call last):
+  File "/home/azar-b/Folder/My_work/esc_k/backend-2/app/services/predictor.py", line 18, in predict
+    results = QdrantService.query_points(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'QdrantService' has no attribute 'query_points'
+2026-06-28 10:56:30,880 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:56:31,074 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:56:31,074 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:56:31,098 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:56:31,103 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:56:31,103 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:56:43,510 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:57:03,516 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:57:03,771 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:57:03,771 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:57:03,803 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:57:03,808 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:57:03,809 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:57:17,719 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 10:57:27,233 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 10:57:27,417 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 10:57:27,418 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 10:57:27,443 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 10:57:27,448 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 10:57:27,449 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 10:57:40,654 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:03:33,758 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:03:33,979 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:03:33,980 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:03:34,006 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:03:34,011 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:03:34,011 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:03:48,468 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:03:56,468 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:03:56,701 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:03:56,701 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:03:56,727 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:03:56,732 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:03:56,733 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:04:08,439 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:04:16,396 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:04:16,615 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:04:16,616 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:04:16,637 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:04:16,643 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:04:16,643 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:04:29,636 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:04:38,247 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:04:38,535 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:04:38,535 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:04:38,556 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:04:38,563 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:04:38,563 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:04:50,596 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:04:59,174 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:04:59,343 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:04:59,343 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:04:59,360 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:04:59,365 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:04:59,365 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:05:20,894 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:05:29,779 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:05:29,975 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:05:29,975 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:05:29,998 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:05:30,003 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:05:30,003 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:05:47,467 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:05:56,788 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:05:56,805 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:05:56,810 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:05:56,810 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:05:57,047 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:05:57,064 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:06:08,168 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:06:08,365 | INFO | app.services.qdrant_service | Vector inserted : 1
+2026-06-28 11:06:08,471 | INFO | app.services.qdrant_service | Vector inserted : 2
+2026-06-28 11:06:08,577 | INFO | app.services.qdrant_service | Vector inserted : 3
+2026-06-28 11:06:08,642 | INFO | app.services.qdrant_service | Vector inserted : 4
+2026-06-28 11:06:08,683 | INFO | app.services.qdrant_service | Vector inserted : 5
+2026-06-28 11:06:08,753 | INFO | app.services.qdrant_service | Vector inserted : 6
+2026-06-28 11:06:08,781 | INFO | app.services.qdrant_service | Vector inserted : 7
+2026-06-28 11:06:08,810 | INFO | app.services.qdrant_service | Vector inserted : 8
+2026-06-28 11:06:08,852 | INFO | app.services.qdrant_service | Vector inserted : 9
+2026-06-28 11:06:08,881 | INFO | app.services.qdrant_service | Vector inserted : 10
+2026-06-28 11:06:08,928 | INFO | app.services.qdrant_service | Vector inserted : 11
+2026-06-28 11:06:08,967 | INFO | app.services.qdrant_service | Vector inserted : 12
+2026-06-28 11:06:08,992 | INFO | app.services.qdrant_service | Vector inserted : 13
+2026-06-28 11:06:09,035 | INFO | app.services.qdrant_service | Vector inserted : 14
+2026-06-28 11:06:09,073 | INFO | app.services.qdrant_service | Vector inserted : 15
+2026-06-28 11:06:09,100 | INFO | app.services.qdrant_service | Vector inserted : 16
+2026-06-28 11:06:09,140 | INFO | app.services.qdrant_service | Vector inserted : 17
+2026-06-28 11:06:09,174 | INFO | app.services.qdrant_service | Vector inserted : 18
+2026-06-28 11:06:09,247 | INFO | app.services.qdrant_service | Vector inserted : 19
+2026-06-28 11:06:09,282 | INFO | app.services.qdrant_service | Vector inserted : 20
+2026-06-28 11:06:09,324 | INFO | app.services.qdrant_service | Vector inserted : 21
+2026-06-28 11:06:09,352 | INFO | app.services.qdrant_service | Vector inserted : 22
+2026-06-28 11:06:09,406 | INFO | app.services.qdrant_service | Vector inserted : 23
+2026-06-28 11:06:09,438 | INFO | app.services.qdrant_service | Vector inserted : 24
+2026-06-28 11:06:09,464 | INFO | app.services.qdrant_service | Vector inserted : 25
+2026-06-28 11:06:09,503 | INFO | app.services.qdrant_service | Vector inserted : 26
+2026-06-28 11:06:09,547 | INFO | app.services.qdrant_service | Vector inserted : 27
+2026-06-28 11:06:09,587 | INFO | app.services.qdrant_service | Vector inserted : 28
+2026-06-28 11:06:09,614 | INFO | app.services.qdrant_service | Vector inserted : 29
+2026-06-28 11:06:09,645 | INFO | app.services.qdrant_service | Vector inserted : 30
+2026-06-28 11:06:09,685 | INFO | app.services.qdrant_service | Vector inserted : 31
+2026-06-28 11:06:09,714 | INFO | app.services.qdrant_service | Vector inserted : 32
+2026-06-28 11:06:09,750 | INFO | app.services.qdrant_service | Vector inserted : 33
+2026-06-28 11:06:09,777 | INFO | app.services.qdrant_service | Vector inserted : 34
+2026-06-28 11:06:09,809 | INFO | app.services.qdrant_service | Vector inserted : 35
+2026-06-28 11:06:09,834 | INFO | app.services.qdrant_service | Vector inserted : 36
+2026-06-28 11:06:09,864 | INFO | app.services.qdrant_service | Vector inserted : 37
+2026-06-28 11:06:09,911 | INFO | app.services.qdrant_service | Vector inserted : 38
+2026-06-28 11:06:09,948 | INFO | app.services.qdrant_service | Vector inserted : 39
+2026-06-28 11:06:09,984 | INFO | app.services.qdrant_service | Vector inserted : 40
+2026-06-28 11:06:10,018 | INFO | app.services.qdrant_service | Vector inserted : 41
+2026-06-28 11:06:10,057 | INFO | app.services.qdrant_service | Vector inserted : 42
+2026-06-28 11:06:10,083 | INFO | app.services.qdrant_service | Vector inserted : 43
+2026-06-28 11:06:10,117 | INFO | app.services.qdrant_service | Vector inserted : 44
+2026-06-28 11:06:10,145 | INFO | app.services.qdrant_service | Vector inserted : 45
+2026-06-28 11:06:10,177 | INFO | app.services.qdrant_service | Vector inserted : 46
+2026-06-28 11:06:10,206 | INFO | app.services.qdrant_service | Vector inserted : 47
+2026-06-28 11:06:10,233 | INFO | app.services.qdrant_service | Vector inserted : 48
+2026-06-28 11:06:10,281 | INFO | app.services.qdrant_service | Vector inserted : 49
+2026-06-28 11:06:10,310 | INFO | app.services.qdrant_service | Vector inserted : 50
+2026-06-28 11:06:10,338 | INFO | app.services.qdrant_service | Vector inserted : 51
+2026-06-28 11:06:10,511 | INFO | app.services.qdrant_service | Vector inserted : 52
+2026-06-28 11:06:10,575 | INFO | app.services.qdrant_service | Vector inserted : 53
+2026-06-28 11:06:10,603 | INFO | app.services.qdrant_service | Vector inserted : 54
+2026-06-28 11:06:10,630 | INFO | app.services.qdrant_service | Vector inserted : 55
+2026-06-28 11:06:10,663 | INFO | app.services.qdrant_service | Vector inserted : 56
+2026-06-28 11:06:10,712 | INFO | app.services.qdrant_service | Vector inserted : 57
+2026-06-28 11:06:10,746 | INFO | app.services.qdrant_service | Vector inserted : 58
+2026-06-28 11:06:10,779 | INFO | app.services.qdrant_service | Vector inserted : 59
+2026-06-28 11:06:10,812 | INFO | app.services.qdrant_service | Vector inserted : 60
+2026-06-28 11:06:10,854 | INFO | app.services.qdrant_service | Vector inserted : 61
+2026-06-28 11:06:10,911 | INFO | app.services.qdrant_service | Vector inserted : 62
+2026-06-28 11:06:10,942 | INFO | app.services.qdrant_service | Vector inserted : 63
+2026-06-28 11:06:10,966 | INFO | app.services.qdrant_service | Vector inserted : 64
+2026-06-28 11:06:11,010 | INFO | app.services.qdrant_service | Vector inserted : 65
+2026-06-28 11:06:11,047 | INFO | app.services.qdrant_service | Vector inserted : 66
+2026-06-28 11:06:11,087 | INFO | app.services.qdrant_service | Vector inserted : 67
+2026-06-28 11:06:11,124 | INFO | app.services.qdrant_service | Vector inserted : 68
+2026-06-28 11:06:11,152 | INFO | app.services.qdrant_service | Vector inserted : 69
+2026-06-28 11:06:11,178 | INFO | app.services.qdrant_service | Vector inserted : 70
+2026-06-28 11:06:11,221 | INFO | app.services.qdrant_service | Vector inserted : 71
+2026-06-28 11:06:11,259 | INFO | app.services.qdrant_service | Vector inserted : 72
+2026-06-28 11:06:11,291 | INFO | app.services.qdrant_service | Vector inserted : 73
+2026-06-28 11:06:11,325 | INFO | app.services.qdrant_service | Vector inserted : 74
+2026-06-28 11:06:11,356 | INFO | app.services.qdrant_service | Vector inserted : 75
+2026-06-28 11:06:11,384 | INFO | app.services.qdrant_service | Vector inserted : 76
+2026-06-28 11:06:11,413 | INFO | app.services.qdrant_service | Vector inserted : 77
+2026-06-28 11:06:11,444 | INFO | app.services.qdrant_service | Vector inserted : 78
+2026-06-28 11:06:11,487 | INFO | app.services.qdrant_service | Vector inserted : 79
+2026-06-28 11:06:11,521 | INFO | app.services.qdrant_service | Vector inserted : 80
+2026-06-28 11:06:11,548 | INFO | app.services.qdrant_service | Vector inserted : 81
+2026-06-28 11:06:11,584 | INFO | app.services.qdrant_service | Vector inserted : 82
+2026-06-28 11:06:11,613 | INFO | app.services.qdrant_service | Vector inserted : 83
+2026-06-28 11:06:11,643 | INFO | app.services.qdrant_service | Vector inserted : 84
+2026-06-28 11:06:11,673 | INFO | app.services.qdrant_service | Vector inserted : 85
+2026-06-28 11:29:20,294 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:29:20,493 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:29:20,493 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:29:20,519 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:29:20,526 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:29:20,527 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:29:34,021 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:29:41,813 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:29:42,007 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:29:42,007 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:29:42,032 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:29:42,037 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:29:42,037 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:29:54,996 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:30:02,925 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:30:03,125 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:30:03,125 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:30:03,151 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:30:03,156 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:30:03,156 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:30:16,088 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:30:24,497 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:30:24,773 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:30:24,774 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:30:24,798 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:30:24,803 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:30:24,803 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:30:38,410 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:30:46,211 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:30:46,405 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:30:46,405 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:30:46,429 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:30:46,435 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:30:46,435 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:30:59,970 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:37:29,594 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:37:29,806 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:37:29,807 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:37:29,832 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:37:29,839 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:37:29,840 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:37:41,937 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:37:49,835 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:37:50,128 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:37:50,129 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:37:50,156 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:37:50,162 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:37:50,162 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:38:03,241 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:38:10,964 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:38:11,226 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:38:11,226 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:38:11,258 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:38:11,264 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:38:11,264 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:38:23,436 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:39:22,300 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:39:22,515 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:39:22,516 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:39:22,549 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:39:22,557 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:39:22,557 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:39:34,371 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:39:41,999 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:39:42,229 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:39:42,229 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:39:42,254 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:39:42,261 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:39:42,261 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:39:55,472 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 11:41:31,705 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-28 11:41:31,913 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-28 11:41:31,913 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-28 11:41:31,942 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-28 11:41:31,949 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-28 11:41:31,949 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-28 11:41:44,828 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-28 21:07:36,830 | INFO | app.services.qdrant_service | Vector inserted : 86
+2026-06-28 21:07:36,832 | INFO | app.services.question_service | Question Created : 86
+2026-06-28 21:08:00,744 | INFO | app.services.qdrant_service | Vector inserted : 87
+2026-06-28 21:08:00,744 | INFO | app.services.question_service | Question Created : 87
+2026-06-28 21:08:45,770 | INFO | app.services.qdrant_service | Vector deleted : 87
+2026-06-28 21:08:45,777 | INFO | app.services.question_service | Question Deleted : 87
+2026-06-30 21:48:49,834 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 21:48:50,163 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 21:48:50,163 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-30 21:48:50,191 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-30 21:48:50,237 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-30 21:48:50,237 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-30 21:49:01,952 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-30 22:21:59,146 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 22:21:59,378 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 22:21:59,378 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-30 22:21:59,405 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-30 22:21:59,417 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-30 22:21:59,418 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-30 22:22:09,321 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-30 22:22:19,756 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 22:22:19,986 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 22:22:19,987 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-30 22:22:20,015 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-30 22:22:20,026 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-30 22:22:20,026 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-30 22:22:30,823 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-30 22:26:15,664 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 22:26:15,885 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 22:26:15,885 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-30 22:26:15,910 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-30 22:26:15,918 | INFO | app.services.qdrant_service | Collection already exists.
+2026-06-30 22:26:15,918 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-30 22:26:27,573 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-30 22:35:58,554 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 22:35:58,761 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 22:39:24,447 | INFO | app.database.mysql | Creating MySQL Connection Pool
+2026-06-30 22:39:24,644 | INFO | app.database.mysql | MySQL Pool Created
+2026-06-30 22:39:24,673 | INFO | app.services.training_service | Loading model : sentence-transformers/all-MiniLM-L6-v2
+2026-06-30 22:39:34,210 | INFO | app.services.training_service | SentenceTransformer loaded successfully.
+2026-06-30 22:39:34,307 | INFO | app.services.qdrant_service | Connecting to Qdrant...
+2026-06-30 22:39:34,341 | INFO | app.services.qdrant_service | Connected to Qdrant.
+2026-06-30 22:39:34,379 | INFO | app.services.qdrant_service | Vector inserted : 1
+2026-06-30 22:39:34,379 | INFO | app.services.question_service | Question Created : 1
+2026-06-30 22:39:34,492 | INFO | app.services.qdrant_service | Vector inserted : 2
+2026-06-30 22:39:34,493 | INFO | app.services.question_service | Question Created : 2
+2026-06-30 22:39:34,577 | INFO | app.services.qdrant_service | Vector inserted : 3
+2026-06-30 22:39:34,578 | INFO | app.services.question_service | Question Created : 3
+2026-06-30 22:39:34,736 | INFO | app.services.qdrant_service | Vector inserted : 4
+2026-06-30 22:39:34,737 | INFO | app.services.question_service | Question Created : 4
+2026-06-30 22:39:34,822 | INFO | app.services.qdrant_service | Vector inserted : 5
+2026-06-30 22:39:34,823 | INFO | app.services.question_service | Question Created : 5
+2026-06-30 22:39:34,880 | INFO | app.services.qdrant_service | Vector inserted : 6
+2026-06-30 22:39:34,882 | INFO | app.services.question_service | Question Created : 6
+2026-06-30 22:39:34,971 | INFO | app.services.qdrant_service | Vector inserted : 7
+2026-06-30 22:39:34,973 | INFO | app.services.question_service | Question Created : 7
+2026-06-30 22:39:35,032 | INFO | app.services.qdrant_service | Vector inserted : 8
+2026-06-30 22:39:35,033 | INFO | app.services.question_service | Question Created : 8
+2026-06-30 22:39:35,094 | INFO | app.services.qdrant_service | Vector inserted : 9
+2026-06-30 22:39:35,095 | INFO | app.services.question_service | Question Created : 9
+2026-06-30 22:39:35,175 | INFO | app.services.qdrant_service | Vector inserted : 10
+2026-06-30 22:39:35,178 | INFO | app.services.question_service | Question Created : 10
+2026-06-30 22:39:35,230 | INFO | app.services.qdrant_service | Vector inserted : 11
+2026-06-30 22:39:35,231 | INFO | app.services.question_service | Question Created : 11
+2026-06-30 22:39:35,352 | INFO | app.services.qdrant_service | Vector inserted : 12
+2026-06-30 22:39:35,352 | INFO | app.services.question_service | Question Created : 12
+2026-06-30 22:39:35,509 | INFO | app.services.qdrant_service | Vector inserted : 13
+2026-06-30 22:39:35,511 | INFO | app.services.question_service | Question Created : 13
+2026-06-30 22:39:35,572 | INFO | app.services.qdrant_service | Vector inserted : 14
+2026-06-30 22:39:35,573 | INFO | app.services.question_service | Question Created : 14
+2026-06-30 22:39:35,636 | INFO | app.services.qdrant_service | Vector inserted : 15
+2026-06-30 22:39:35,639 | INFO | app.services.question_service | Question Created : 15
+2026-06-30 22:39:35,710 | INFO | app.services.qdrant_service | Vector inserted : 16
+2026-06-30 22:39:35,711 | INFO | app.services.question_service | Question Created : 16
+2026-06-30 22:39:35,772 | INFO | app.services.qdrant_service | Vector inserted : 17
+2026-06-30 22:39:35,773 | INFO | app.services.question_service | Question Created : 17
+2026-06-30 22:39:35,835 | INFO | app.services.qdrant_service | Vector inserted : 18
+2026-06-30 22:39:35,837 | INFO | app.services.question_service | Question Created : 18
+2026-06-30 22:39:35,893 | INFO | app.services.qdrant_service | Vector inserted : 19
+2026-06-30 22:39:35,894 | INFO | app.services.question_service | Question Created : 19
+2026-06-30 22:39:35,945 | INFO | app.services.qdrant_service | Vector inserted : 20
+2026-06-30 22:39:35,946 | INFO | app.services.question_service | Question Created : 20
+2026-06-30 22:39:35,989 | INFO | app.services.qdrant_service | Vector inserted : 21
+2026-06-30 22:39:35,990 | INFO | app.services.question_service | Question Created : 21
+2026-06-30 22:39:36,040 | INFO | app.services.qdrant_service | Vector inserted : 22
+2026-06-30 22:39:36,040 | INFO | app.services.question_service | Question Created : 22
+2026-06-30 22:39:36,107 | INFO | app.services.qdrant_service | Vector inserted : 23
+2026-06-30 22:39:36,108 | INFO | app.services.question_service | Question Created : 23
+2026-06-30 22:39:36,163 | INFO | app.services.qdrant_service | Vector inserted : 24
+2026-06-30 22:39:36,165 | INFO | app.services.question_service | Question Created : 24
+2026-06-30 22:39:36,207 | INFO | app.services.qdrant_service | Vector inserted : 25
+2026-06-30 22:39:36,208 | INFO | app.services.question_service | Question Created : 25
+2026-06-30 22:39:36,268 | INFO | app.services.qdrant_service | Vector inserted : 26
+2026-06-30 22:39:36,270 | INFO | app.services.question_service | Question Created : 26
+2026-06-30 22:39:36,334 | INFO | app.services.qdrant_service | Vector inserted : 27
+2026-06-30 22:39:36,336 | INFO | app.services.question_service | Question Created : 27
+2026-06-30 22:39:36,389 | INFO | app.services.qdrant_service | Vector inserted : 28
+2026-06-30 22:39:36,391 | INFO | app.services.question_service | Question Created : 28
+2026-06-30 22:39:36,505 | INFO | app.services.qdrant_service | Vector inserted : 29
+2026-06-30 22:39:36,506 | INFO | app.services.question_service | Question Created : 29
+2026-06-30 22:39:36,595 | INFO | app.services.qdrant_service | Vector inserted : 30
+2026-06-30 22:39:36,595 | INFO | app.services.question_service | Question Created : 30
+2026-06-30 22:39:36,684 | INFO | app.services.qdrant_service | Vector inserted : 31
+2026-06-30 22:39:36,687 | INFO | app.services.question_service | Question Created : 31
+2026-06-30 22:39:36,733 | INFO | app.services.qdrant_service | Vector inserted : 32
+2026-06-30 22:39:36,734 | INFO | app.services.question_service | Question Created : 32
+2026-06-30 22:39:36,789 | INFO | app.services.qdrant_service | Vector inserted : 33
+2026-06-30 22:39:36,791 | INFO | app.services.question_service | Question Created : 33
+2026-06-30 22:39:36,845 | INFO | app.services.qdrant_service | Vector inserted : 34
+2026-06-30 22:39:36,847 | INFO | app.services.question_service | Question Created : 34
+2026-06-30 22:39:36,927 | INFO | app.services.qdrant_service | Vector inserted : 35
+2026-06-30 22:39:36,928 | INFO | app.services.question_service | Question Created : 35
+2026-06-30 22:39:36,973 | INFO | app.services.qdrant_service | Vector inserted : 36
+2026-06-30 22:39:36,976 | INFO | app.services.question_service | Question Created : 36
+2026-06-30 22:39:37,043 | INFO | app.services.qdrant_service | Vector inserted : 37
+2026-06-30 22:39:37,044 | INFO | app.services.question_service | Question Created : 37
+2026-06-30 22:39:37,111 | INFO | app.services.qdrant_service | Vector inserted : 38
+2026-06-30 22:39:37,111 | INFO | app.services.question_service | Question Created : 38
+2026-06-30 22:39:37,190 | INFO | app.services.qdrant_service | Vector inserted : 39
+2026-06-30 22:39:37,191 | INFO | app.services.question_service | Question Created : 39
+2026-06-30 22:39:37,244 | INFO | app.services.qdrant_service | Vector inserted : 40
+2026-06-30 22:39:37,245 | INFO | app.services.question_service | Question Created : 40
+2026-06-30 22:39:37,367 | INFO | app.services.qdrant_service | Vector inserted : 41
+2026-06-30 22:39:37,369 | INFO | app.services.question_service | Question Created : 41
+2026-06-30 22:39:37,468 | INFO | app.services.qdrant_service | Vector inserted : 42
+2026-06-30 22:39:37,468 | INFO | app.services.question_service | Question Created : 42
+2026-06-30 22:39:37,533 | INFO | app.services.qdrant_service | Vector inserted : 43
+2026-06-30 22:39:37,533 | INFO | app.services.question_service | Question Created : 43
+2026-06-30 22:39:37,607 | INFO | app.services.qdrant_service | Vector inserted : 44
+2026-06-30 22:39:37,608 | INFO | app.services.question_service | Question Created : 44
+2026-06-30 22:39:37,688 | INFO | app.services.qdrant_service | Vector inserted : 45
+2026-06-30 22:39:37,690 | INFO | app.services.question_service | Question Created : 45
+2026-06-30 22:39:37,769 | INFO | app.services.qdrant_service | Vector inserted : 46
+2026-06-30 22:39:37,769 | INFO | app.services.question_service | Question Created : 46
+2026-06-30 22:39:37,824 | INFO | app.services.qdrant_service | Vector inserted : 47
+2026-06-30 22:39:37,827 | INFO | app.services.question_service | Question Created : 47
+2026-06-30 22:39:37,883 | INFO | app.services.qdrant_service | Vector inserted : 48
+2026-06-30 22:39:37,884 | INFO | app.services.question_service | Question Created : 48
+2026-06-30 22:39:37,978 | INFO | app.services.qdrant_service | Vector inserted : 49
+2026-06-30 22:39:37,980 | INFO | app.services.question_service | Question Created : 49
+2026-06-30 22:39:38,020 | INFO | app.services.qdrant_service | Vector inserted : 50
+2026-06-30 22:39:38,022 | INFO | app.services.question_service | Question Created : 50
+2026-06-30 22:39:38,074 | INFO | app.services.qdrant_service | Vector inserted : 51
+2026-06-30 22:39:38,076 | INFO | app.services.question_service | Question Created : 51
+2026-06-30 22:39:38,170 | INFO | app.services.qdrant_service | Vector inserted : 52
+2026-06-30 22:39:38,172 | INFO | app.services.question_service | Question Created : 52
+2026-06-30 22:39:38,222 | INFO | app.services.qdrant_service | Vector inserted : 53
+2026-06-30 22:39:38,223 | INFO | app.services.question_service | Question Created : 53
+2026-06-30 22:39:38,280 | INFO | app.services.qdrant_service | Vector inserted : 54
+2026-06-30 22:39:38,281 | INFO | app.services.question_service | Question Created : 54
+2026-06-30 22:39:38,351 | INFO | app.services.qdrant_service | Vector inserted : 55
+2026-06-30 22:39:38,352 | INFO | app.services.question_service | Question Created : 55
+2026-06-30 22:39:38,409 | INFO | app.services.qdrant_service | Vector inserted : 56
+2026-06-30 22:39:38,412 | INFO | app.services.question_service | Question Created : 56
+2026-06-30 22:39:38,453 | INFO | app.services.qdrant_service | Vector inserted : 57
+2026-06-30 22:39:38,453 | INFO | app.services.question_service | Question Created : 57
+2026-06-30 22:39:38,498 | INFO | app.services.qdrant_service | Vector inserted : 58
+2026-06-30 22:39:38,500 | INFO | app.services.question_service | Question Created : 58
+2026-06-30 22:39:38,534 | INFO | app.services.qdrant_service | Vector inserted : 59
+2026-06-30 22:39:38,534 | INFO | app.services.question_service | Question Created : 59
+2026-06-30 22:39:38,580 | INFO | app.services.qdrant_service | Vector inserted : 60
+2026-06-30 22:39:38,582 | INFO | app.services.question_service | Question Created : 60
+2026-06-30 22:39:38,658 | INFO | app.services.qdrant_service | Vector inserted : 61
+2026-06-30 22:39:38,659 | INFO | app.services.question_service | Question Created : 61
+2026-06-30 22:39:38,705 | INFO | app.services.qdrant_service | Vector inserted : 62
+2026-06-30 22:39:38,706 | INFO | app.services.question_service | Question Created : 62
+2026-06-30 22:39:38,764 | INFO | app.services.qdrant_service | Vector inserted : 63
+2026-06-30 22:39:38,767 | INFO | app.services.question_service | Question Created : 63
+2026-06-30 22:39:38,840 | INFO | app.services.qdrant_service | Vector inserted : 64
+2026-06-30 22:39:38,841 | INFO | app.services.question_service | Question Created : 64
+2026-06-30 22:39:38,909 | INFO | app.services.qdrant_service | Vector inserted : 65
+2026-06-30 22:39:38,910 | INFO | app.services.question_service | Question Created : 65
+2026-06-30 22:39:38,975 | INFO | app.services.qdrant_service | Vector inserted : 66
+2026-06-30 22:39:38,976 | INFO | app.services.question_service | Question Created : 66
+2026-06-30 22:39:39,086 | INFO | app.services.qdrant_service | Vector inserted : 67
+2026-06-30 22:39:39,087 | INFO | app.services.question_service | Question Created : 67
+2026-06-30 22:39:39,141 | INFO | app.services.qdrant_service | Vector inserted : 68
+2026-06-30 22:39:39,143 | INFO | app.services.question_service | Question Created : 68
+2026-06-30 22:39:39,217 | INFO | app.services.qdrant_service | Vector inserted : 69
+2026-06-30 22:39:39,219 | INFO | app.services.question_service | Question Created : 69
+2026-06-30 22:39:39,275 | INFO | app.services.qdrant_service | Vector inserted : 70
+2026-06-30 22:39:39,275 | INFO | app.services.question_service | Question Created : 70
+2026-06-30 22:39:39,337 | INFO | app.services.qdrant_service | Vector inserted : 71
+2026-06-30 22:39:39,338 | INFO | app.services.question_service | Question Created : 71
+2026-06-30 22:39:39,382 | INFO | app.services.qdrant_service | Vector inserted : 72
+2026-06-30 22:39:39,385 | INFO | app.services.question_service | Question Created : 72
+2026-06-30 22:39:39,436 | INFO | app.services.qdrant_service | Vector inserted : 73
+2026-06-30 22:39:39,436 | INFO | app.services.question_service | Question Created : 73
+2026-06-30 22:39:39,515 | INFO | app.services.qdrant_service | Vector inserted : 74
+2026-06-30 22:39:39,516 | INFO | app.services.question_service | Question Created : 74
+2026-06-30 22:39:39,572 | INFO | app.services.qdrant_service | Vector inserted : 75
+2026-06-30 22:39:39,573 | INFO | app.services.question_service | Question Created : 75
+2026-06-30 22:39:39,656 | INFO | app.services.qdrant_service | Vector inserted : 76
+2026-06-30 22:39:39,657 | INFO | app.services.question_service | Question Created : 76
+2026-06-30 22:39:39,715 | INFO | app.services.qdrant_service | Vector inserted : 77
+2026-06-30 22:39:39,716 | INFO | app.services.question_service | Question Created : 77
+2026-06-30 22:39:39,802 | INFO | app.services.qdrant_service | Vector inserted : 78
+2026-06-30 22:39:39,803 | INFO | app.services.question_service | Question Created : 78
+2026-06-30 22:39:39,882 | INFO | app.services.qdrant_service | Vector inserted : 79
+2026-06-30 22:39:39,883 | INFO | app.services.question_service | Question Created : 79
+2026-06-30 22:39:39,944 | INFO | app.services.qdrant_service | Vector inserted : 80
+2026-06-30 22:39:39,945 | INFO | app.services.question_service | Question Created : 80
+2026-06-30 22:39:40,000 | INFO | app.services.qdrant_service | Vector inserted : 81
+2026-06-30 22:39:40,002 | INFO | app.services.question_service | Question Created : 81
+2026-06-30 22:39:40,064 | INFO | app.services.qdrant_service | Vector inserted : 82
+2026-06-30 22:39:40,067 | INFO | app.services.question_service | Question Created : 82
+2026-06-30 22:39:40,150 | INFO | app.services.qdrant_service | Vector inserted : 83
+2026-06-30 22:39:40,152 | INFO | app.services.question_service | Question Created : 83
+2026-06-30 22:39:40,220 | INFO | app.services.qdrant_service | Vector inserted : 84
+2026-06-30 22:39:40,222 | INFO | app.services.question_service | Question Created : 84
+2026-06-30 22:39:40,277 | INFO | app.services.qdrant_service | Vector inserted : 85
+2026-06-30 22:39:40,278 | INFO | app.services.question_service | Question Created : 85
+2026-06-30 22:39:40,344 | INFO | app.services.qdrant_service | Vector inserted : 86
+2026-06-30 22:39:40,345 | INFO | app.services.question_service | Question Created : 86
